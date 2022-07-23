@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/erro.css">
     <script src="https://kit.fontawesome.com/8a1c76cdfb.js" crossorigin="anonymous"></script>
     <script src="/javascript/vetores.js"></script>
     <script src="/javascript/pesquisa.js"></script>
-    <title>Na Trave | Campeonato Capixaba</title>
+    <title>Na Trave | Tabelas</title>
 </head>
-
 <body>
     <header>
         <nav>
@@ -40,6 +38,7 @@
                             </datalist>
                             <a class="pesquisa-icon" ><i onclick="javascript:pesquisarTime()" class="fa-solid fa-magnifying-glass"></i></a></li>
                     </ul>
+
                 </div>
             </div>
 
@@ -47,9 +46,8 @@
     </header>
 
     <main>
-        <img class="main-img" src="/imagens/geral/campo.jpg" alt="">
+        <h1 class="titulo-erro">Ops, não foi possível encontrar seu time</h1>
     </main>
-
 
     <footer>
         <div class="container-rodape">
@@ -57,16 +55,16 @@
             <div class="caixa-rodape">
                 <img class="logo-rodape" src="/imagens/geral/logo-footer.png" alt="Logotipo">
 
-                <input class="barra-rodape" type="search" placeholder="Buscar"><a class="pesquisa-rodape" href="#"><i
-                        class="fa-solid fa-magnifying-glass"></i></a>
-
+                    <input class="barra-rodape" type="search" placeholder="Buscar"><a class="pesquisa-rodape"
+                    href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                
             </div>
 
             <div class="navbar-rodape">
                 <h4 class="titulo-rodape">O Campeonato</h4>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contato.html">Fale Conosco</a></li>
                     <li><a href="#">Departamento de Competições</a></li>
                     <li><a href="#">Departamento Financeiro</a></li>
                     <li><a href="#">Política de Privacidade</a></li>
@@ -83,7 +81,7 @@
                     <li><a href="#">Times</a></li>
                 </ul>
             </div>
-
+            
             <div class="icons">
                 <h4 class="titulo-rodape">Redes Sociais</h4>
                 <ul>
@@ -93,14 +91,15 @@
                     <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
                 </ul>
             </div>
+ 
+        </div>
+        <div class="copyright"> 
+            <p>Copyright &copy;	2022 Na Trave. Todos os Direitos Reservados.</p>
+        </div>
 
-        </div>
-        <div class="copyright">
-            <p>Copyright &copy; 2022 Na Trave. Todos os Direitos Reservados.</p>
-        </div>
 
     </footer>
 
+    <script src="/javascript/tabela.js"></script>
 </body>
-
 </html>
