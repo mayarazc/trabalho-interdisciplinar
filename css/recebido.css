@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&display=swap');
+
+/* menu inicia */
+
+body{
+    font-family: 'Albert Sans', sans-serif;
+}
+
+header{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 15.5vh;
+    top: 0;
+    background-color: #3fae2a;
+}
+
+header .container{
+    padding: 10px 0;
+    justify-content: space-around;
+    display: flex;
+}
+
+.logotipo{
+    width: 110px;
+}
+
+.navbar ul{
+    text-transform: uppercase;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    gap: 2.5rem;  
+}
+
+.navbar a{
+    position: relative;
+    color: #fff;
+}
+
+.navbar .nav-item:after{
+    content: "";
+    position: absolute;
+    background-color: #53E336;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.nav-item:hover:after{
+    width: 100%;
+}
+
+.navbar{
+    margin: auto 0;
+}
+
+.barra-pesquisa{
+    font-size: 1rem;
+    font-family: 'Albert Sans', sans-serif;
+    padding: 8px 50px 7px 5px;
+    border: none; 
+    outline: none;
+}
+
+.pesquisa-icon{
+    justify-content: center;
+    background-color: #53E336;
+    padding: 6.5px 8px 6px 6px;
+    transition: all ease-in 0.2s;
+    margin-left: -5px;
+    cursor: pointer;
+}
+
+.pesquisa-icon:hover{
+    background-color: #53e336a7;
+}
+
+/* menu termina */
+
+/* main inicia */
+
+
+.d1{
+    display: inline-block;
+    width: 600px;
+    margin-left: 150px;
+}
+
+.d2{
+    display: inline-block;
+    margin: 0 auto;
+    width: 700px;
+    height: 1350px;
+}
+
+.titulo{
+    font-size: 2rem;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.tabela{
+    width: 600px;
+    margin: 2rem 2rem;
+    text-align: center;
+}
+
+td{
+    border: 1px solid #f5f5f5;
+}
+
+tr:nth-child(odd){
+    background-color: #eee;
+}
+
+.imagem-time{
+    margin: 5px auto;
+    width: 40px;
+    display: inline;
+}
+
+.nome-time{
+    padding: 5px 10px;
+}
+
+.gols{
+    font-size: 1.2rem;
+}
+
+.relatorio{
+    margin: 0 auto;
+    width: 550px;
+}
+
+table th{
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.linha-relatorio{
+    font-size: 1.2rem;
+    border: 1px solid #f5f5f5;
+    text-align: center;
+}
+
+.imagem-time-rel{
+    padding: 10px 2px;
+    width: 50px;
+    display: inline;
+}
+
+
+/* rodapé inicia */
+
+footer{
+    background-color: #0082d3;
+}
+
+.container-rodape{
+    display: flex;
+    padding: 4rem;
+    gap: 6rem;
+    justify-content: flex-start;
+}
+
+.caixa-rodape{
+    width: 220px;
+}
+
+.logo-rodape{
+    margin-left: 12%;
+    width: 150px;
+}
+
+.barra-rodape{
+    font-size: 1rem;
+    font-family: 'Albert Sans', sans-serif;
+    margin-top: 15px;
+    padding: 8px 10px 6px 5px;
+    border: none; 
+    outline: none;
+}
+
+.pesquisa-rodape{
+    color: #fff;
+    justify-content: center;
+    background-color: #53E336;
+    padding: 8px 8px 6px;
+    transition: all ease-in 0.2s;
+}
+
+.pesquisa-rodape:hover{
+    background-color: #53e336a7;
+}
+
+.titulo-rodape{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+}
+
+.navbar-rodape a{
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    transition: all ease-in 0.2s;
+}
+
+.navbar-rodape a:hover{
+    color: #53E336;
+}
+
+.icons ul{
+    font-size: 1.2rem;
+    padding-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.icons a{
+    display: flex;
+    color: #fff;
+    transition: all ease 0.5s;
+}
+
+.icons a:hover{
+    color: #53E336;
+}
+
+.copyright{
+    color: #fff;
+    text-align: center;
+    background-color: #3fae2a;
+    padding: 20px;
+}
+
+
+
+
