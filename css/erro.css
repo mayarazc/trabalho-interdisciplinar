@@ -61,8 +61,7 @@ header .container{
 .barra-pesquisa{
     font-size: 1rem;
     font-family: 'Albert Sans', sans-serif;
-    padding: 6.5px 8px 6px 8px;
-    margin-left: -5px;
+    padding: 8px 50px 7px 5px;
     border: none; 
     outline: none;
 }
@@ -71,6 +70,7 @@ header .container{
     justify-content: center;
     background-color: #53E336;
     padding: 6.5px 8px 6px 6px;
+    margin-left: -5px;
     transition: all ease-in 0.2s;
 }
 
@@ -83,9 +83,11 @@ header .container{
 /* main inicia */
 
 .titulo-erro{
+    color: #696969;
     text-align: center;
-    font-size: 40px;
-    margin: 150px;
+    padding-top: 20px;
+    font-size: 2rem;
+    margin: 200px;
 }
 
 /* rodapé inicia */
