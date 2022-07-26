@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&display=swap');
 
-/* menu inicia */
-
+/* Seletores do corpo --------------------------------------*/
 body{
     font-family: 'Albert Sans', sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
 
 header{
     position: fixed;
@@ -13,7 +16,7 @@ header{
     height: 15.5vh;
     top: 0;
     background-color: #3fae2a;
-}
+    }
 
 header .container{
     padding: 10px 0;
@@ -57,7 +60,6 @@ header .container{
 .navbar{
     margin: auto 0;
 }
-
 .barra-pesquisa{
     font-size: 1rem;
     font-family: 'Albert Sans', sans-serif;
@@ -77,16 +79,112 @@ header .container{
     background-color: #53e336a7;
 }
 
-/* menu termina */
-
 /* main inicia */
 
-.main-img{
+.image{
+    margin-top: 90px;
     width: 100%;
-
 }
 
+form{
+    color: #696969;
+	width: 940px;
+	margin: 0 auto;
+	padding: 40px 0;
+}
 
+form .descricao{
+    text-align: center;
+    color: #2d7b1e;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 350px;
+    margin-bottom: 50px;
+}
+
+form label{
+    color: #696969;
+	display: block;
+	margin-bottom: 10px;
+	font-size: 1.2rem;
+    margin-left: 180px;
+}
+
+form legend{
+    color: #696969;
+	display: block;
+	margin-bottom: 10px;
+    margin-left: 180px;
+	font-size: 1.2rem;
+}
+
+form select{
+    width: 62%;
+    border: 1px solid #2d7b1e;
+    border-radius: 3px;  
+}
+
+.input_block{
+	display: block;
+	margin-bottom: 20px;
+    margin-left: 180px;
+	font-size: 1rem;
+	padding: 6px 7px;
+    border: 1px solid #2d7b1e;
+    outline: none;
+    border-radius: 3px;
+	width: 60%;
+	font-family: 'Albert Sans', sans-serif;
+}    
+
+.input-block{
+	display: block;
+	margin-bottom: 20px;
+    margin-left: 180px;
+	font-size: 1rem;
+	padding: 6px 7px;
+    border: 1px solid #2d7b1e;
+    outline: none;
+    border-radius: 3px;
+	width: 60%;
+	font-family: 'Albert Sans', sans-serif;
+}
+
+.input-inline{
+	margin-bottom: 0px;
+	font-size: 1.1rem;
+	font-family: 'Albert Sans', sans-serif;
+}
+
+select{
+	margin-bottom: 20px;
+    margin-left: 180px;
+	width: 250px;
+	height: 30px;
+	font-size: 1.1rem;
+	font-family: 'Albert Sans', sans-serif;
+}
+
+.enviar{
+	width: 12%;
+	padding: 10px 5px;
+	background-color: #3fae2a;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+	font-family: 'Albert Sans', sans-serif;
+    margin-left: 180px;
+    margin-top: 10px;
+}
+.enviar:hover{
+	background-color: #53E336;
+	transform: scale(00.3s);
+}
 
 /* rodapé inicia */
 
