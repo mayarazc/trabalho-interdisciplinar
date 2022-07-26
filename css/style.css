@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&display=swap');
 
+:root {
+    --hue: 468;
+}
+
 /* menu inicia */
 
 body{
@@ -82,11 +86,55 @@ header .container{
 
 /* main inicia */
 
-.main-img{
-    width: 100%;
-
+.caixa {
+   width: 900px;
+   margin: 3rem auto;
+   text-align: center;
 }
 
+.image {
+    display: inline-block;
+    width: 300px;
+    padding-left: 20px;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.main-img {
+    width: 100%;
+    margin-top: 100px;
+    display: block;
+}
+
+.main h2{
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #3fae2a;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.caixa .descricao{
+    color: #696969;
+    font-size: 1.3rem;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+.caixa .clubes{
+    margin: 15px auto;
+    justify-content: center;
+}
+
+.caixa .descricao-times{
+    color: #696969;
+    margin-bottom: 50px;
+}
+
+.caixa span{
+    color: #3fae2a;
+
+}
 
 
 /* rodapé inicia */
