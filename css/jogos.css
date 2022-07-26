@@ -70,6 +70,7 @@ header .container{
     justify-content: center;
     background-color: #53E336;
     padding: 6.5px 8px 6px 8px;
+    margin-left: -5px;
     transition: all ease-in 0.2s;
 }
 
@@ -81,6 +82,43 @@ header .container{
 
 /* main inicia */
 
+.titulo{
+    color: #3fae2a;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 50px;
+}
+
+.tabela{
+    color: #696969;
+    width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+td{
+    border: 1px solid #f5f5f5;
+}
+
+tr:nth-child(odd){
+    background-color: #eee;
+}
+
+.imagem-time{
+    margin: 5px auto;
+    width: 40px;
+    display: inline;
+}
+
+.nome-time{
+    padding: 5px 10px;
+}
+
+.gols{
+    font-size: 1.3rem;
+}
 
 /* rodapé inicia */
 

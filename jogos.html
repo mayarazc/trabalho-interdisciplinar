@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/jogos.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jogos.css">
     <script src="https://kit.fontawesome.com/8a1c76cdfb.js" crossorigin="anonymous"></script>
+    <script src="javascript/vetores.js"></script>
+    <script src="javascript/pesquisa.js"></script>
+
     <title>Na Trave | Tabelas</title>
 </head>
-<body>
+<body onload="mostrarTabela()">
     <header>
         <nav>
 
@@ -22,8 +25,19 @@
                         <li><a class="nav-item" href="index.html">Home</a></li>
                         <li><a class="nav-item" href="jogos.html">Jogos</a></li>
                         <li><a class="nav-item" href="contato.html">Fale Conosco</a></li>
-                        <li><input class="barra-pesquisa" type="search" placeholder="Buscar"><a class="pesquisa-icon"
-                        href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li><input class="barra-pesquisa" type="search" placeholder="Buscar" list="times">
+                            <datalist id="times">
+                                    <option value="Nova Venécia-ES"></option>
+                                    <option value="Serra"></option>
+                                    <option value="Real Noroeste-ES"></option>
+                                    <option value="Estrela do Norte"></option>
+                                    <option value="Vitória"></option>
+                                    <option value="Rio Branco-ES"></option>
+                                    <option value="Desportiva"></option>
+                                    <option value="Rio Branco VN-ES"></option>
+                                    <option value="Colatina"></option>
+                            </datalist>
+                            <a class="pesquisa-icon" ><i onclick="javascript:pesquisarTime()" class="fa-solid fa-magnifying-glass"></i></a></li>
                     </ul>
 
                 </div>
@@ -32,12 +46,18 @@
         </nav>
     </header>
 
+    <main>
+        <table class="tabela">
+            <h2 class="titulo">Jogos</h2>
+        </table>
+    </main>
+
 
     <footer>
         <div class="container-rodape">
 
             <div class="caixa-rodape">
-                <img class="logo-rodape" src="/imagens/geral/logo-footer.png" alt="Logotipo">
+                <img class="logo-rodape" src="imagens/geral/logo-footer.png" alt="Logotipo">
 
                     <input class="barra-rodape" type="search" placeholder="Buscar"><a class="pesquisa-rodape"
                     href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
@@ -84,6 +104,6 @@
 
     </footer>
 
-    <script src="/javascript/tabela.js"></script>
+    <script src="javascript/tabela.js"></script>
 </body>
 </html>

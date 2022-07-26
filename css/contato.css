@@ -69,7 +69,8 @@ header .container{
 .pesquisa-icon{
     justify-content: center;
     background-color: #53E336;
-    padding: 6.5px 8px 6px 6px;
+    padding: 6.5px 8px 6px 8px;
+    margin-left: -5px;
     transition: all ease-in 0.2s;
 }
 

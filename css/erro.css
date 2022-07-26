@@ -61,7 +61,8 @@ header .container{
 .barra-pesquisa{
     font-size: 1rem;
     font-family: 'Albert Sans', sans-serif;
-    padding: 8px 50px 7px 5px;
+    padding: 6.5px 8px 6px 8px;
+    margin-left: -5px;
     border: none; 
     outline: none;
 }
@@ -69,8 +70,7 @@ header .container{
 .pesquisa-icon{
     justify-content: center;
     background-color: #53E336;
-    padding: 6.5px 8px 6px 8px;
-    margin-left: -5px;
+    padding: 6.5px 8px 6px 6px;
     transition: all ease-in 0.2s;
 }
 
@@ -82,12 +82,11 @@ header .container{
 
 /* main inicia */
 
-.main-img{
-    width: 100%;
-
+.titulo-erro{
+    text-align: center;
+    font-size: 40px;
+    margin: 150px;
 }
-
-
 
 /* rodapé inicia */
 

@@ -69,7 +69,8 @@ header .container{
 .pesquisa-icon{
     justify-content: center;
     background-color: #53E336;
-    padding: 6.5px 8px 6px 6px;
+    padding: 6.5px 8px 6px 8px;
+    margin-left: -5px;
     transition: all ease-in 0.2s;
     margin-left: -5px;
     cursor: pointer;
@@ -83,27 +84,28 @@ header .container{
 
 /* main inicia */
 
-
-.d1{
-    display: inline-block;
-    width: 600px;
-    margin-left: 150px;
+main .tabelas{
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
 }
 
 .d2{
-    display: inline-block;
-    margin: 0 auto;
-    width: 700px;
-    height: 1350px;
+    margin: 34px auto;
 }
 
 .titulo{
-    font-size: 2rem;
+    color: #3fae2a;
+    font-size: 2.2rem;
+    font-weight: bold;
     margin-top: 10%;
     text-align: center;
 }
 
 .tabela{
+    color: #696969;
     width: 600px;
     margin: 2rem 2rem;
     text-align: center;
@@ -128,15 +130,18 @@ tr:nth-child(odd){
 }
 
 .gols{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .relatorio{
+    color: #696969;
     margin: 0 auto;
     width: 550px;
 }
 
 table th{
+    color: #3fae2a;
+    border: 1px solid #f5f5f5;
     font-size: 1.4rem;
     text-align: center;
     padding: 5px 10px;
@@ -150,8 +155,15 @@ table th{
 
 .imagem-time-rel{
     padding: 10px 2px;
-    width: 50px;
+    width: 50px; 
     display: inline;
+}
+
+.dados{
+    display: table-caption;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    
 }
 
 

@@ -70,11 +70,11 @@ function mostrarTime() {
             // cria um elemento de img, uma classe para estilização no css e seleciona as imagens de cada time
             var imgTimeA = document.createElement("img");
             imgTimeA.classList.add("imagem-time");
-            imgTimeA.src = "../imagens/times/" + timeA[i] + ".png";
+            imgTimeA.src = "imagens/times/" + timeA[i] + ".png";
 
             var imgTimeB = document.createElement("img");
             imgTimeB.classList.add("imagem-time");
-            imgTimeB.src = "../imagens/times/" + timeB[i] + ".png";
+            imgTimeB.src = "imagens/times/" + timeB[i] + ".png";
 
             textoTimeA.textContent = timeA[i];
             textoTimeA.classList.add("nome-time");
@@ -149,7 +149,7 @@ function mostrarTime() {
     // cria imagem do time
     var imgTime = document.createElement("img");
     imgTime.classList.add("imagem-time-rel");
-    imgTime.src = "../imagens/times/" + time + ".png";
+    imgTime.src = "imagens/times/" + time + ".png";
 
     tdSaldoGols.appendChild(pSaldo);
     pSaldo.classList.add("dados");
