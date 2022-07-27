@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&display=swap');
 
+:root {
+    --hue: 468;
+}
+
 /* menu inicia */
 
 body{

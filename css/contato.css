@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&display=swap');
 
-/* menu inicia */
-
+/* Seletores do corpo --------------------------------------*/
 body{
     font-family: 'Albert Sans', sans-serif;
 }
@@ -61,7 +60,6 @@ header .container{
 .navbar{
     margin: auto 0;
 }
-
 .barra-pesquisa{
     font-size: 1rem;
     font-family: 'Albert Sans', sans-serif;
