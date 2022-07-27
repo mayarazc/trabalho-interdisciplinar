@@ -1,17 +1,18 @@
 function pesquisarTime() {
     var filtro = document.querySelector('.barra-pesquisa');
     var time = filtro.value;
-    var flag = false
+    var timeEncontrado = false; // flag para parar a repetição quando o time for encontrado
 
-    for (var i = 0 ; i < 10 && flag == false ; i++){
+    for (var i = 0 ; i < 10 && timeEncontrado == false ; i++){
+
         if(time == timeA[i]){
             window.location = "recebido.html?URLtime=" + time; 
-            flag = true;
+            timeEncontrado = true;
+
         } else{
             window.location = "erro.html";
         }
     }
-    
 }
 
 

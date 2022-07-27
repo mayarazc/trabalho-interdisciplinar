@@ -69,7 +69,8 @@ header .container{
 .pesquisa-icon{
     justify-content: center;
     background-color: #53E336;
-    padding: 6.5px 8px 6px 6px;
+    padding: 6.5px 8px 6px 8px;
+    margin-left: -5px;
     transition: all ease-in 0.2s;
 }
 
@@ -79,13 +80,59 @@ header .container{
 
 /* menu termina */
 
+
 /* main inicia */
 
-.main-img{
-    width: 100%;
-
+.caixa {
+   width: 900px;
+   margin: 3rem auto;
+   text-align: center;
 }
 
+.imagem-times {
+    display: inline-block;
+    width: 300px;
+    padding-left: 20px;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.main-img {
+    width: 100%;
+    margin-top: 100px;
+    display: block;
+}
+
+.main h2{
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #3fae2a;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.caixa .descricao{
+    color: #696969;
+    font-size: 1.3rem;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+.caixa .clubes{
+    margin: 15px auto;
+    justify-content: center;
+}
+
+.caixa .descricao-times{
+    color: #696969;
+    margin-bottom: 50px;
+}
+
+.caixa span{
+    color: #3fae2a;
+}
+
+/* main termina */
 
 
 /* rodapé inicia */
@@ -174,6 +221,78 @@ footer{
     padding: 20px;
 }
 
+/* media queries */
+
+@media screen and (max-width: 480px) {
+
+    header, nav, .container, .navbar, .main-img, main, .caixa, footer, .container-rodapen, .navbar-rodape, .icons, .copyright{
+        width: 100vw;
+        overflow: hidden;
+
+    }
+
+    .logotipo{
+        width: 80px;
+    }
+
+    nav ul{
+        position: fixed;
+        padding-top: 50px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: block;
+    }
+
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .main-img{
+        margin-top: 25%;
+    }
+
+    .caixa h2, p{
+        padding: 2%;
+    }
+
+    .caixa h2{
+        font-size: 1.5rem;
+    }
+
+    .caixa .descricao{
+        font-size: 1rem;
+
+    }
+
+    .container-rodape{
+        display: block;
+    }
+
+    .logo-rodape{
+        width: 100px;
+        
+    }
+
+    footer ul{
+        font-size: 1rem;
+        padding: 5px 0 20px;
+    }
+
+    footer .titulo-rodape{
+        font: 1rem;
+
+    }
+
+    .titulo-rodape{
+        padding-top: 10px;
+    }
+
+    .copyright{
+        text-align: start;
+    }
+}
 
 
 

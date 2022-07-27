@@ -1,11 +1,11 @@
 function mostrarTime() {
-    var URLtime = new URLSearchParams(window.location.search);
+    var URLtime = new URLSearchParams(window.location.search); // variável que pega o time pesquisado na barra de pesquisa
     var time = URLtime.get('URLtime');
     var titulo = document.querySelector(".titulo");
     titulo.textContent = time;
     var pontuacao = 0;
-    var qtdGols = 0;
-    var qtdSofrido = 0;
+    var qtdGolsPro = 0;
+    var qtdGolsContra = 0;
     var vitoria = 0;
     var empate = 0;
     var derrota = 0;
@@ -15,11 +15,11 @@ function mostrarTime() {
         if (time == timeA[i] || time == timeB[i]) {
 
             if (time == timeA[i]) {
-
-                qtdGols += golsA[i];
-                qtdSofrido += golsB[i];
                 
-
+                qtdGolsPro += golsA[i];
+                qtdGolsContra += golsB[i];
+                
+                // confere se o resultado do time: se ganhou, empatou ou perdeu
                 if (golsA[i] > golsB[i]) {
                     vitoria++;
 
@@ -30,10 +30,11 @@ function mostrarTime() {
                     derrota++;
                 }
 
+                // caso o time digitado estiver no vetor B
             } else {
-
-                qtdGols += golsB[i];
-                qtdSofrido += golsA[i];
+            
+                qtdGolsPro += golsB[i];
+                qtdGolsContra += golsA[i];
 
                 if (golsB[i] > golsA[i]) {
                     vitoria++;
@@ -70,11 +71,11 @@ function mostrarTime() {
             // cria um elemento de img, uma classe para estilização no css e seleciona as imagens de cada time
             var imgTimeA = document.createElement("img");
             imgTimeA.classList.add("imagem-time");
-            imgTimeA.src = "../imagens/times/" + timeA[i] + ".png";
+            imgTimeA.src = "imagens/times/" + timeA[i] + ".png";
 
             var imgTimeB = document.createElement("img");
             imgTimeB.classList.add("imagem-time");
-            imgTimeB.src = "../imagens/times/" + timeB[i] + ".png";
+            imgTimeB.src = "imagens/times/" + timeB[i] + ".png";
 
             textoTimeA.textContent = timeA[i];
             textoTimeA.classList.add("nome-time");
@@ -102,15 +103,20 @@ function mostrarTime() {
 
         }
     }
+
+    /* colocado depois do for para não perder dados e porque não precisa calcular
+    a pontuação a cada loop*/
+
     pontuacao = (vitoria * 3 + empate);
+
 
                      // -------------------------- relatorio ----------------------------------- // 
 
+    
+    // seleciona a classe .relatorio que foi criada no html e guarda numa variável
     var relatorio = document.querySelector(".relatorio");
 
-    //var trTitulo = document.createElement("tr");
-    //trTitulo.classList.add("tr-relatorio");
-
+    // cria linha da tabela e uma classe para estilizar
     var trDados = document.createElement("tr");
     trDados.classList.add("linha-relatorio");
 
@@ -124,7 +130,7 @@ function mostrarTime() {
     var tdGolsC = document.createElement("td");
     var tdSaldoGols = document.createElement("td");
 
-    // cria os dados
+    // cria os parágrafos para guardar os dados 
     var pPontuacao = document.createElement("p");
     pPontuacao.textContent = pontuacao;
 
@@ -138,19 +144,20 @@ function mostrarTime() {
     pDerrotas.textContent = derrota;
 
     var pGP = document.createElement("p");
-    pGP.textContent = qtdGols;
+    pGP.textContent = qtdGolsPro;
 
     var pGC = document.createElement("p");
-    pGC.textContent = qtdSofrido;
+    pGC.textContent = qtdGolsContra;
 
     var pSaldo = document.createElement("p");
-    pSaldo.textContent = qtdGols - qtdSofrido;
+    pSaldo.textContent = qtdGolsPro - qtdGolsContra;
 
-    // cria imagem do time
+    // cria imagem do time e classe
     var imgTime = document.createElement("img");
     imgTime.classList.add("imagem-time-rel");
-    imgTime.src = "../imagens/times/" + time + ".png";
+    imgTime.src = "imagens/times/" + time + ".png";
 
+    // inserindo no html
     tdSaldoGols.appendChild(pSaldo);
     pSaldo.classList.add("dados");
 

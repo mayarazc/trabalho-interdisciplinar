@@ -70,6 +70,7 @@ header .container{
     justify-content: center;
     background-color: #53E336;
     padding: 6.5px 8px 6px 8px;
+    margin-left: -5px;
     transition: all ease-in 0.2s;
 }
 
@@ -79,16 +80,20 @@ header .container{
 
 /* menu termina */
 
+
 /* main inicia */
 
 .titulo{
-    font-size: 2rem;
+    color: #3fae2a;
+    font-size: 2.2rem;
+    font-weight: bold;
     text-align: center;
     margin-top: 10%;
     margin-left: 50px;
 }
 
 .tabela{
+    color: #696969;
     width: 800px;
     margin: 2rem auto;
     text-align: center;
@@ -116,8 +121,7 @@ tr:nth-child(odd){
     font-size: 1.3rem;
 }
 
-
-
+/* main termina */
 
 
 /* rodapé inicia */
