@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&display=swap');
 
-:root {
-    --hue: 468;
-}
-
 /* menu inicia */
 
 body{
@@ -62,7 +58,7 @@ header .container{
     margin: auto 0;
 }
 
-.barra-pesquisa{
+.inBarraPesquisa{
     font-size: 1rem;
     font-family: 'Albert Sans', sans-serif;
     padding: 8px 50px 7px 5px;
@@ -70,7 +66,7 @@ header .container{
     outline: none;
 }
 
-.pesquisa-icon{
+.btPesquisa{
     justify-content: center;
     background-color: #53E336;
     padding: 6.5px 8px 6px 8px;
@@ -78,7 +74,7 @@ header .container{
     transition: all ease-in 0.2s;
 }
 
-.pesquisa-icon:hover{
+.btPesquisa:hover{
     background-color: #53e336a7;
 }
 
@@ -229,32 +225,67 @@ footer{
 
 @media screen and (max-width: 480px) {
 
-    header, nav, .container, .navbar, .main-img, main, .caixa, footer, .container-rodapen, .navbar-rodape, .icons, .copyright{
-        width: 100vw;
-        overflow: hidden;
-
-    }
-
-    .logotipo{
-        width: 80px;
-    }
-
-    nav ul{
-        position: fixed;
-        padding-top: 50px;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        display: block;
+    header, nav, .container, .navbar, main, .caixa, footer, .container-rodape, .navbar-rodape, .icons, .copyright{
+        width: auto;
     }
 
     body{
         width: 100vw;
-        height: 100vh;
+    }
+
+    .logotipo{
+        width: 90px;
+    }
+
+    header{
+        height: 140px;
+        width: 100%;
+    }
+
+    header .container{
+        padding-top: 25px;
+    }
+
+    .container ul{
+        display: block;
+        text-align: left;
+    }
+
+    .container li{
+        text-align: justify;
+        padding-bottom: 5px;
+    }
+
+    header h1{
+        text-align: center;
+    }
+
+    header .navbar{
+        position: static;
+    }
+
+    .nav-item{
+        font-size: 0.9rem;
+        position: sticky;
+    }
+
+    .inBarraPesquisa{
+        font-size: 0.7rem;
+        padding: 6px 5px 5px 8px;
+    }
+
+    .btPesquisa{
+        font-size: 0.8rem;
+        justify-content: center;
+        padding: 4.5px 8px 6px 6px;
     }
 
     .main-img{
-        margin-top: 25%;
+        margin-top: 28%;
+    }
+
+    .caixa{
+        margin: 2rem 0;
     }
 
     .caixa h2, p{
@@ -267,36 +298,33 @@ footer{
 
     .caixa .descricao{
         font-size: 1rem;
-
     }
 
+    /* footer */
+
     .container-rodape{
+        justify-content: center;
+        padding-left: 25%;
         display: block;
     }
 
     .logo-rodape{
-        width: 100px;
-        
+        width: 90px;
     }
 
     footer ul{
-        font-size: 1rem;
-        padding: 5px 0 20px;
+        padding-bottom: 5px;
     }
 
     footer .titulo-rodape{
-        font: 1rem;
-
-    }
-
-    .titulo-rodape{
         padding-top: 10px;
+        font: 0.9rem;
     }
 
     .copyright{
-        text-align: start;
+        font-size: 0.9rem;
+        text-align: center;
     }
 }
-
 
 

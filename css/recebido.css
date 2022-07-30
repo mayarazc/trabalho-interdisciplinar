@@ -58,7 +58,7 @@ header .container{
     margin: auto 0;
 }
 
-.barra-pesquisa{
+.inBarraPesquisa{
     font-size: 1rem;
     font-family: 'Albert Sans', sans-serif;
     padding: 8px 50px 7px 5px;
@@ -66,7 +66,7 @@ header .container{
     outline: none;
 }
 
-.pesquisa-icon{
+.btPesquisa{
     justify-content: center;
     background-color: #53E336;
     padding: 6.5px 8px 6px 8px;
@@ -76,7 +76,7 @@ header .container{
     cursor: pointer;
 }
 
-.pesquisa-icon:hover{
+.btPesquisa:hover{
     background-color: #53e336a7;
 }
 
@@ -162,8 +162,8 @@ table th{
 .dados{
     display: table-caption;
     padding-bottom: 20px;
-    padding-left: 30px;
-    
+    padding-left: 25px;
+    padding-right: 20px;
 }
 
 
@@ -252,6 +252,119 @@ footer{
     background-color: #3fae2a;
     padding: 20px;
 }
+
+/* media queries */
+
+@media screen and (max-width: 480px) {
+
+    header, nav, .container, .navbar, main, .tabelas, .d1, .d2, .tabela, .relatorio, footer, .container-rodape, .navbar-rodape, .icons, .copyright{
+        width: auto;
+    }
+
+    body{
+        width: 100vw;
+    }
+
+    .logotipo{
+        width: 90px;
+    }
+
+    header{
+        height: 140px;
+        width: 100%;
+    }
+
+    header .container{
+        padding-top: 25px;
+    }
+
+    .container ul{
+        display: block;
+        text-align: left;
+    }
+
+    .container li{
+        text-align: justify;
+        padding-bottom: 5px;
+    }
+
+    header h1{
+        text-align: center;
+    }
+
+    header .navbar{
+        position: static;
+    }
+
+    .nav-item{
+        font-size: 0.9rem;
+        position: sticky;
+    }
+
+    .inBarraPesquisa{
+        font-size: 0.7rem;
+        padding: 6px 5px 5px 8px;
+    }
+
+    .btPesquisa{
+        font-size: 0.8rem;
+        justify-content: center;
+        padding: 4.5px 8px 6px 6px;
+    }
+
+    main .titulo{
+        margin-top: 40%;
+    }
+
+    main .tabelas{
+        width: 480px;
+        display: block;
+    }
+
+    .tabelas .tabela{
+        width: 400px;
+    }
+
+    .tabelas .relatorio{
+        width: 400px;
+    }
+
+    .relatorio .dados{
+        padding-left: 12px;
+    }
+
+
+  
+
+    /* footer */
+
+    .container-rodape{
+        justify-content: center;
+        padding-left: 25%;
+        display: block;
+    }
+
+    .logo-rodape{
+        width: 90px;
+    }
+
+    footer ul{
+        padding-bottom: 5px;
+    }
+
+    footer .titulo-rodape{
+        padding-top: 10px;
+        font: 0.9rem;
+    }
+
+    .copyright{
+        font-size: 0.9rem;
+        text-align: center;
+    }
+}
+
+
+
 
 
 

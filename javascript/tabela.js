@@ -1,3 +1,12 @@
+/*  Nome: Henrique Gutler, Igor Luiz Pereira Butke e Mayara Zanetti Carlini
+    Data: De 15/07 à 27/07
+    Versão: 1.0
+    Descrição: Criação da tabela geral de jogos, para o trabalho interdisciplinar 
+    do tema Campeonato de Futebol Capixaba
+ */
+
+var inCorpo = document.getElementById("inCorpo");
+
 function mostrarTabela(){
 
     for (let i = 0; i < timeA.length; i++) {
@@ -57,4 +66,4 @@ function mostrarTabela(){
     }    
 }
 
-
+inCorpo.addEventListener("click",mostrarTabela());

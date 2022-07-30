@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/contato.css">
     <script src="https://kit.fontawesome.com/8a1c76cdfb.js" crossorigin="anonymous"></script>
     <script src="javascript/vetores.js"></script>
-    <script src="javascript/pesquisa.js"></script>
     <title>Na Trave | Contato</title>
 </head>
 
@@ -26,20 +25,19 @@
                         <li><a class="nav-item" href="index.html">Home</a></li>
                         <li><a class="nav-item" href="jogos.html">Jogos</a></li>
                         <li><a class="nav-item" href="contato.html">Fale Conosco</a></li>
-                        <li><input class="barra-pesquisa" type="search" placeholder="Buscar Time" list="times">
+                        <li><input class="inBarraPesquisa" type="search" placeholder="Buscar Time" list="times">
                             <datalist id="times">
-                                <option value="Nova Venécia-ES"></option>
-                                <option value="Serra"></option>
-                                <option value="Real Noroeste-ES"></option>
-                                <option value="Estrela do Norte"></option>
-                                <option value="Vitória"></option>
-                                <option value="Rio Branco-ES"></option>
-                                <option value="Desportiva"></option>
-                                <option value="Rio Branco VN-ES"></option>
-                                <option value="Colatina"></option>
+                                    <option value="Nova Venécia-ES"></option>
+                                    <option value="Serra"></option>
+                                    <option value="Real Noroeste-ES"></option>
+                                    <option value="Estrela do Norte"></option>
+                                    <option value="Vitória"></option>
+                                    <option value="Rio Branco-ES"></option>
+                                    <option value="Desportiva"></option>
+                                    <option value="Rio Branco VN-ES"></option>
+                                    <option value="Colatina"></option>
                             </datalist>
-                            <a onclick="pesquisarTime()" class="pesquisa-icon"><i 
-                                    class="fa-solid fa-magnifying-glass"></i></a>
+                            <a id="btPesquisar" class="btPesquisa"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                         </li>
                     </ul>
 
@@ -52,49 +50,50 @@
     <img class="image" src="imagens/geral/imagemContato.png" alt="chuteira">
 
     <main class="conteudo">
+        
+        <section class="caixa-descricao">
+            <p class="descricao">
+                Quer saber mais sobre o Na Trave ou somente enviar uma mensagem? Basta enviar suas informações e
+                entraremos em contato.
+            </p>    
+        </section>
 
         <form action="">
-            <section>
-                <p class="descricao">
-                    Quer saber mais sobre o Na Trave ou somente entrar em contato? Basta enviar suas informações e
-                    entraremos em contato.
-                </p>    
-            </section>
-            
-            <section>
 
-                <legend>Qual Departamento você deseja ser atendido: *</legend>
-                <select name="" id="">
-                <option value="">Equipe de Marca</option>
-                <option value="">Equipe de Imprensa</option>
-                <option value="">Equipe de Vendas</option>
-                <option value="">Atendimento ao Cliente</option>
-                </select>
+                <section>
+                    <legend class="pergunta">Qual Departamento você deseja ser atendido: *</legend>
+                    <select class="selecao">
+                    <option value="">Equipe de Marca</option>
+                    <option value="">Equipe de Imprensa</option>
+                    <option value="">Equipe de Vendas</option>
+                    <option value="">Atendimento ao Cliente</option>
+                    </select>
+                </section>
 
+                <section>
+
+                    <label for="resumo" class="pergunta">Resumo: *</label>
+                    <input type="text" id="resumo" class="input-block" required>
+        
+                    <label for="mensagem" class="pergunta">Mensagem: *</label>
+                    <textarea name="" id="mensagem" cols="30" rows="10" class="input-block" required></textarea>
+        
+                    <label for="nome" class="pergunta">Seu Nome: *</label>
+                    <input type="text" id="nome" class="input_block">
+        
+                    <label for="empresa" class="pergunta">Sua Empresa: *</label>
+                    <input type="text" id="empresa" class="input_block">
+        
+                    <label for="email" class="pergunta">E-mail: *</label>
+                    <input type="email" id="email" class="input_block" required placeholder="email@gmail(hotmail).com">
+                
+                    <label class="pergunta"><input type="checkbox" class="input-inline" checked> Gostaria de receber nossas novidades por email?</label>
+                    <input type="submit" value="Enviar" class="enviar">
+                
             </section>
-            
-            <section>
-                <label for="resumo">Resumo: *</label>
-                <input type="text" id="resumo" class="input-block" required>
-    
-                <label for="mensagem">Mensagem: *</label>
-                <textarea name="" id="mensagem" cols="30" rows="10" class="input-block" required></textarea>
-    
-                <label for="nome">Seu Nome: *</label>
-                <input type="text" id="nome" class="input_block">
-    
-                <label for="empresa">Sua Empresa: *</label>
-                <input type="text" id="empresa" class="input_block">
-    
-                <label for="email">E-mail: *</label>
-                <input type="email" id="email" class="input_block" required placeholder="email@gmail(hotmail).com">
-    
-                <label><input type="checkbox" class="input-inline" checked> Gostaria de receber nossas novidades por
-                    email?</label>
-    
-                <input type="submit" value="Enviar" class="enviar">
-            </section>
+
         </form>
+    </main>
 
         <footer>
             <div class="container-rodape">
@@ -140,8 +139,8 @@
                 <p>Copyright &copy; 2022 Na Trave. Todos os Direitos Reservados.</p>
             </div>
 
-
         </footer>
+        <script src="javascript/pesquisa.js"></script>
 </body>
 
 </html>

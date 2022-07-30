@@ -8,12 +8,10 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/recebido.css">
     <script src="https://kit.fontawesome.com/8a1c76cdfb.js" crossorigin="anonymous"></script>
-    <script src="javascript/vetores.js"></script>
-    <script src="javascript/pesquisa.js"></script>
     <title>Na Trave | Time</title>
 </head>
 
-<body onload="mostrarTime()">
+<body id="inCorpo">
 
     <header>
         <nav>
@@ -27,21 +25,19 @@
                         <li><a class="nav-item" href="index.html">Home</a></li>
                         <li><a class="nav-item" href="jogos.html">Jogos</a></li>
                         <li><a class="nav-item" href="contato.html">Fale Conosco</a></li>
-                        <li><input class="barra-pesquisa" type="search" placeholder="Buscar Time" list="times">
+                        <li><input class="inBarraPesquisa" type="search" placeholder="Buscar Time" list="times">
                             <datalist id="times">
-                                <option value="Nova Venécia-ES"></option>
-                                <option value="Serra"></option>
-                                <option value="Real Noroeste-ES"></option>
-                                <option value="Estrela do Norte"></option>
-                                <option value="Vitória"></option>
-                                <option value="Rio Branco-ES"></option>
-                                <option value="Desportiva"></option>
-                                <option value="Rio Branco VN-ES"></option>
-                                <option value="Colatina"></option>
+                                    <option value="Nova Venécia-ES"></option>
+                                    <option value="Serra"></option>
+                                    <option value="Real Noroeste-ES"></option>
+                                    <option value="Estrela do Norte"></option>
+                                    <option value="Vitória"></option>
+                                    <option value="Rio Branco-ES"></option>
+                                    <option value="Desportiva"></option>
+                                    <option value="Rio Branco VN-ES"></option>
+                                    <option value="Colatina"></option>
                             </datalist>
-                            <a onclick="pesquisarTime()" class="pesquisa-icon"><i 
-                            class="fa-solid fa-magnifying-glass"></i></a>
-                        </li>
+                            <a id="btPesquisar" class="btPesquisa"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -50,9 +46,9 @@
     </header>
 
     <main>
-        <h1 class="titulo"></h1>
+        <h2 class="titulo"></h1>
 
-        <div class="tabelas">
+        <section class="tabelas">
 
             <section class="d1">
                 <table class="tabela">
@@ -61,20 +57,10 @@
 
             <section class="d2">
                 <table class="relatorio">
-                    <thead>
-                        <th></th>
-                        <th>PTS</th>
-                        <th>V</th>
-                        <th>E</th>
-                        <th>D</th>
-                        <th>GP</th>
-                        <th>GC</th>
-                        <th>SG</th>
-                    </thead>
                 </table>
             </section>
             
-        </div>
+        </section>
     </main>
 
     <footer>
@@ -122,7 +108,8 @@
         </div>
 
     </footer>
-
+    <script src="javascript/vetores.js"></script>
+    <script src="javascript/pesquisa.js"></script>
     <script src="javascript/recebido.js"></script>
 </body>
 

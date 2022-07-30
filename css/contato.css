@@ -1,48 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&display=swap');
 
 /* Seletores do corpo --------------------------------------*/
-body{
+body {
     font-family: 'Albert Sans', sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
-header{
+header {
     position: fixed;
     z-index: 999;
     width: 100%;
     height: 15.5vh;
     top: 0;
     background-color: #3fae2a;
-    }
+}
 
-header .container{
+header .container {
     padding: 10px 0;
     justify-content: space-around;
     display: flex;
 }
 
-.logotipo{
+.logotipo {
     width: 110px;
 }
 
-.navbar ul{
+.navbar ul {
     text-transform: uppercase;
     align-items: center;
     font-size: 1.1rem;
     font-weight: 600;
     display: flex;
-    gap: 2.5rem;  
+    gap: 2.5rem;
 }
 
-.navbar a{
+.navbar a {
     position: relative;
     color: #fff;
 }
 
-.navbar .nav-item:after{
+.navbar .nav-item:after {
     content: "";
     position: absolute;
     background-color: #53E336;
@@ -53,22 +53,23 @@ header .container{
     transition: 0.3s;
 }
 
-.nav-item:hover:after{
+.nav-item:hover:after {
     width: 100%;
 }
 
-.navbar{
+.navbar {
     margin: auto 0;
 }
-.barra-pesquisa{
+
+.inBarraPesquisa {
     font-size: 1rem;
     font-family: 'Albert Sans', sans-serif;
     padding: 8px 50px 7px 5px;
-    border: none; 
+    border: none;
     outline: none;
 }
 
-.pesquisa-icon{
+.btPesquisa {
     justify-content: center;
     background-color: #53E336;
     padding: 6.5px 8px 6px 8px;
@@ -76,152 +77,156 @@ header .container{
     transition: all ease-in 0.2s;
 }
 
-.pesquisa-icon:hover{
+.pesquisa-icon:hover {
     background-color: #53e336a7;
 }
+
 /* menu termina */
 
 
 /* main inicia */
 
-.image{
+.image {
     margin-top: 90px;
+    margin-bottom: 15px;
     width: 100%;
 }
 
-form{
+form {
     color: #696969;
-	width: 940px;
-	margin: 0 auto;
-	padding: 40px 0;
+    width: 940px;
+    margin: 0 auto;
+    padding: 40px 0;
 }
 
-form .descricao{
+main .descricao {
     text-align: center;
     color: #2d7b1e;
     font-size: 1.5rem;
     font-weight: bold;
-    margin: 0 auto;
+    margin: 10px auto;
     width: 350px;
-    margin-bottom: 50px;
+
 }
 
-form label{
+form label {
     color: #696969;
-	display: block;
-	margin-bottom: 10px;
-	font-size: 1.2rem;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
     margin-left: 180px;
 }
 
-form legend{
+form legend {
     color: #696969;
-	display: block;
-	margin-bottom: 10px;
+    display: block;
+    margin-bottom: 10px;
     margin-left: 180px;
-	font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
-form select{
+form select {
     width: 62%;
     border: 1px solid #2d7b1e;
-    border-radius: 3px;  
+    border-radius: 3px;
 }
 
-.input_block{
-	display: block;
-	margin-bottom: 20px;
+.input_block {
+    display: block;
+    margin-bottom: 20px;
     margin-left: 180px;
-	font-size: 1rem;
-	padding: 6px 7px;
+    font-size: 1rem;
+    padding: 6px 7px;
     border: 1px solid #2d7b1e;
     outline: none;
     border-radius: 3px;
-	width: 60%;
-	font-family: 'Albert Sans', sans-serif;
-}    
+    width: 60%;
+    font-family: 'Albert Sans', sans-serif;
+}
 
-.input-block{
-	display: block;
-	margin-bottom: 20px;
+.input-block {
+    display: block;
+    margin-bottom: 20px;
     margin-left: 180px;
-	font-size: 1rem;
-	padding: 6px 7px;
+    font-size: 1rem;
+    padding: 6px 7px;
     border: 1px solid #2d7b1e;
     outline: none;
     border-radius: 3px;
-	width: 60%;
-	font-family: 'Albert Sans', sans-serif;
+    width: 60%;
+    font-family: 'Albert Sans', sans-serif;
 }
 
-.input-inline{
-	margin-bottom: 0px;
-	font-size: 1.1rem;
-	font-family: 'Albert Sans', sans-serif;
+.input-inline {
+    margin-bottom: 0px;
+    font-size: 1.1rem;
+    font-family: 'Albert Sans', sans-serif;
 }
 
-select{
-	margin-bottom: 20px;
+select {
+    margin-bottom: 20px;
     margin-left: 180px;
-	width: 250px;
-	height: 30px;
-	font-size: 1.1rem;
-	font-family: 'Albert Sans', sans-serif;
+    width: 250px;
+    height: 30px;
+    font-size: 1.1rem;
+    font-family: 'Albert Sans', sans-serif;
 }
 
-.enviar{
-	width: 12%;
-	padding: 10px 5px;
-	background-color: #3fae2a;
-	color: white;
-	font-weight: bold;
-	font-size: 18px;
-	border: none;
-	border-radius: 5px;
-	transition: 1s all;
-	cursor: pointer;
-	font-family: 'Albert Sans', sans-serif;
+.enviar {
+    width: 12%;
+    padding: 10px 5px;
+    background-color: #3fae2a;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+    font-family: 'Albert Sans', sans-serif;
     margin-left: 180px;
     margin-top: 10px;
 }
-.enviar:hover{
-	background-color: #53E336;
-	transform: scale(00.3s);
+
+.enviar:hover {
+    background-color: #53E336;
+    transform: scale(00.3s);
 }
+
 /* main termina */
 
 /* rodapé inicia */
 
-footer{
+footer {
     background-color: #0082d3;
 }
 
-.container-rodape{
+.container-rodape {
     display: flex;
     padding: 4rem;
     gap: 6rem;
     justify-content: flex-start;
 }
 
-.caixa-rodape{
+.caixa-rodape {
     width: 220px;
 }
 
-.logo-rodape{
+.logo-rodape {
     margin-left: 12%;
     width: 150px;
 }
 
-.barra-rodape{
+.barra-rodape {
     font-size: 1rem;
     font-family: 'Albert Sans', sans-serif;
     margin-top: 15px;
     padding: 8px 10px 6px 5px;
-    border: none; 
+    border: none;
     outline: none;
 }
 
-.pesquisa-rodape{
+.pesquisa-rodape {
     color: #fff;
     justify-content: center;
     background-color: #53E336;
@@ -229,11 +234,11 @@ footer{
     transition: all ease-in 0.2s;
 }
 
-.pesquisa-rodape:hover{
+.pesquisa-rodape:hover {
     background-color: #53e336a7;
 }
 
-.titulo-rodape{
+.titulo-rodape {
     color: #fff;
     text-transform: uppercase;
     font-weight: 600;
@@ -241,37 +246,157 @@ footer{
     padding-bottom: 10px;
 }
 
-.navbar-rodape a{
+.navbar-rodape a {
     color: #fff;
     font-size: 1.1rem;
     line-height: 1.5;
     transition: all ease-in 0.2s;
 }
 
-.navbar-rodape a:hover{
+.navbar-rodape a:hover {
     color: #53E336;
 }
 
-.icons ul{
+.icons ul {
     font-size: 1.2rem;
     padding-top: 10px;
     display: flex;
     gap: 20px;
 }
 
-.icons a{
+.icons a {
     display: flex;
     color: #fff;
     transition: all ease 0.5s;
 }
 
-.icons a:hover{
+.icons a:hover {
     color: #53E336;
 }
 
-.copyright{
+.copyright {
     color: #fff;
     text-align: center;
     background-color: #3fae2a;
     padding: 20px;
+}
+
+@media screen and (max-width: 480px) {
+
+    header, nav, .container, .navbar, form, footer, .container-rodape,
+    textarea, .navbar-rodape,.icons, .copyright {
+        width: auto;
+    }
+
+    body {
+        width: 100vw;
+    }
+
+    .logotipo {
+        width: 90px;
+    }
+
+    header {
+        height: 140px;
+        width: 100%;
+    }
+
+    header .container {
+        padding-top: 25px;
+    }
+
+    .container ul {
+        display: block;
+        text-align: left;
+    }
+
+    .container li {
+        text-align: justify;
+        padding-bottom: 5px;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    header .navbar {
+        position: static;
+    }
+
+    .nav-item {
+        font-size: 0.9rem;
+        position: sticky;
+    }
+
+    .inBarraPesquisa {
+        font-size: 0.7rem;
+        padding: 6px 5px 5px 8px;
+    }
+
+    .btPesquisa {
+        font-size: 0.8rem;
+        justify-content: center;
+        padding: 4.5px 8px 6px 6px;
+    }
+
+    .image {
+        margin-top: 25%;
+    }
+
+    main form{
+        width: 400px;
+    }
+
+    .input-block, .input_block, select, .novidades-email{
+        margin: 0 auto;
+    }
+
+    .caixa-descricao .descricao{
+        font-size: 1.1rem;
+    }
+
+    .selecao{
+        margin-left: 18%;
+    }
+
+    option{
+        font-size: 0.8rem;
+    }
+
+    form .enviar{
+        width: 80px;
+        margin: 5px 20%;
+    }
+
+    .pergunta{
+        padding: 15px 0px 10px 18%;
+        margin: 0 auto;
+    }
+
+
+    /* footer */
+
+    .container-rodape {
+        justify-content: center;
+        padding-left: 25%;
+        display: block;
+    }
+
+    .logo-rodape {
+        width: 90px;
+    }
+
+    footer ul {
+        padding-bottom: 5px;
+    }
+
+    footer .titulo-rodape {
+        padding-top: 10px;
+        font: 0.9rem;
+    }
+
+    .copyright {
+        font-size: 0.9rem;
+        text-align: center;
+    }
 }
